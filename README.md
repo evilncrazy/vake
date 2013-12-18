@@ -19,7 +19,7 @@ test.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
 vake: 4 errors or warnings. Run vake? [Y/n]
 ```
 
-Upon running vake after make is completed, you are prompted for a vim ex command.
+If you run vake, you will be prompted for a vim ex command for each error or warning.
 
 ```shell
 <Enter> to edit. 'q' to skip.
@@ -31,6 +31,6 @@ test.c:8:19 error: expected ';' before ')' token
 ```
 
 The ex command is executed with the cursor positioned as shown by the caret.
-Conveniently, pressing <Enter> will not execute any ex commands, so you just get
+Conveniently, pressing "Enter" will not execute any ex commands, so you just get
 a vim instance. Typing "q" will instantly quit the vim instance that was launched,
 effectively skipping the edit.
